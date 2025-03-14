@@ -24,7 +24,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`bg-white dark:bg-black shadow-md ${openSans.variable}`}>
+    <header className={`bg-white shadow-md ${openSans.variable}`}>
       <div className="container mx-auto px-4 py-1">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-between w-full">
@@ -36,7 +36,7 @@ export default function Header() {
                 alt="Home"
                 className="w-16 h-auto mr-4"
               />
-              <span className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
+              <span className="text-gray-800 hover:text-blue-500">
                 
               </span>
             </Link>
@@ -45,23 +45,23 @@ export default function Header() {
 
           {/* Right - Navigation Links */}
           <nav className="flex items-center space-x-10">
-            <Link href="/nsmpd" className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
+            <Link href="/nsmpd" className="text-gray-800 hover:text-blue-500">
               N S M P D 
             </Link>
-            <Link href="/nsutmun" className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
+            <Link href="/nsutmun" className="text-gray-800 hover:text-blue-500">
               N S U T M U N
             </Link>
-            <Link href="/pd" className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
+            <Link href="/pd" className="text-gray-800 hover:text-blue-500">
               P  D 
             </Link>
-            <Link href="/mun" className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
+            <Link href="/mun" className="text-gray-800 hover:text-blue-500">
               M U N
             </Link>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
+                className="text-gray-800 hover:text-blue-500"
               >
                 {link.label}
               </Link>
@@ -78,10 +78,10 @@ export default function Header() {
                 alt="Home"
                 className="w-12 h-auto mr-2"
               />
-              <span className="text-gray-800 dark:text-white">Home</span>
+              <span className="text-gray-800">Home</span>
             </Link>
             <button
-              className="text-gray-800 dark:text-white"
+              className="text-gray-800"
               onClick={toggleMenu}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -93,28 +93,28 @@ export default function Header() {
             <nav className="mt-4 space-y-4">
               <Link 
                 href="/nsmpd" 
-                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                className="block py-2 px-4 text-gray-800 hover:text-blue-500 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 N S M P D
               </Link>
               <Link 
                 href="/nsutmun" 
-                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                className="block py-2 px-4 text-gray-800 hover:text-blue-500 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 N S U T M U N
               </Link>
               <Link 
                 href="/pd" 
-                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                className="block py-2 px-4 text-gray-800 hover:text-blue-500 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 P  D
               </Link>
               <Link 
                 href="/mun" 
-                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                className="block py-2 px-4 text-gray-800 hover:text-blue-500 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 M U N
@@ -123,7 +123,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                  className="block py-2 px-4 text-gray-800 hover:text-blue-500 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}

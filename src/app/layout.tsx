@@ -2,7 +2,7 @@ import { ThemeProvider } from './components/ThemeContext';
 import Header from './components/Header';
 import './globals.css';
 import { ReactNode } from 'react';
-import DarkModeInitializer from './components/DarkModeProvider';
+import DarkModeProvider from './components/DarkModeProvider';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="icon" href="/images/debsoc logo 2.png" type="image/png" />
       </head>
       <body className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
-        <DarkModeInitializer />
+        <DarkModeProvider />
         <ThemeProvider>
           <Header />
           <main className="container mx-auto ">

@@ -20,7 +20,6 @@ export default function Header() {
   };
 
   const navLinks = [
-   
     { href: '/blogs', label: 'B L O G S' },
   ];
 
@@ -46,7 +45,7 @@ export default function Header() {
 
           {/* Right - Navigation Links */}
           <nav className="flex items-center space-x-10">
-          <Link href="/nsmpd" className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 ">
+            <Link href="/nsmpd" className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
               N S M P D 
             </Link>
             <Link href="/nsutmun" className="text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400">
@@ -89,14 +88,36 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Mobile Navigation Menu */}
+          {/* Mobile Navigation Menu - Updated to match desktop */}
           {isMenuOpen && (
             <nav className="mt-4 space-y-4">
-              <Link href="/parlimentary-debating" className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center">
-                Parlimentary debating
+              <Link 
+                href="/nsmpd" 
+                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                N S M P D
               </Link>
-              <Link href="/model-united-nations" className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center">
-                Model united nations
+              <Link 
+                href="/nsutmun" 
+                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                N S U T M U N
+              </Link>
+              <Link 
+                href="/pd" 
+                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                P  D
+              </Link>
+              <Link 
+                href="/mun" 
+                className="block py-2 px-4 text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                M U N
               </Link>
               {navLinks.map((link) => (
                 <Link

@@ -117,7 +117,7 @@ const MUNPage = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-screen text-black">
+      <div className="flex justify-center items-center min-h-screen text-white">
         Loading...
       </div>
     );
@@ -136,7 +136,7 @@ const MUNPage = () => {
 
       {/* Hero Section with Event Slideshow */}
       <div className="relative min-h-screen">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/90 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/90 to-black" />
         
         <div className="relative pt-4 font-extrabold px-6">
           <motion.h1
@@ -161,13 +161,13 @@ const MUNPage = () => {
                 {events[currentSlide] && (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
                     <div className="space-y-6 flex flex-col justify-center">
-                      <h2 className="text-4xl font-bold text-gray-800">
+                      <h2 className="text-4xl font-bold text-white">
                         {events[currentSlide].title}
                       </h2>
-                      <p className="text-gray-600 text-lg">
+                      <p className="text-gray-300 text-lg">
                         {events[currentSlide].description || "Join us for this exciting event!"}
                       </p>
-                      <p className="text-red-500">
+                      <p className="text-red-400">
                         {new Date(events[currentSlide].date).toLocaleDateString()}
                       </p>
                     </div>
@@ -190,7 +190,7 @@ const MUNPage = () => {
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                    index === currentSlide ? 'bg-red-500' : 'bg-gray-400'
+                    index === currentSlide ? 'bg-red-500' : 'bg-gray-600'
                   }`}
                 />
               ))}
@@ -200,11 +200,11 @@ const MUNPage = () => {
       </div>
 
       {/* Members Section */}
-      <div className={`${raleway.className} relative py-20 px-6 bg-gradient-to-b from-white to-transparent`}>
+      <div className={`${raleway.className} relative py-20 px-6 bg-gradient-to-b from-black to-transparent`}>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-16 text-gray-800"
+          className="text-4xl font-bold text-center mb-16 text-white"
         >
           Meet Our Team
         </motion.h2>
@@ -216,7 +216,7 @@ const MUNPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white/40 backdrop-blur-sm rounded-lg p-6 transform hover:scale-105 transition-transform duration-300 shadow-md"
+              className="bg-black/40 backdrop-blur-sm rounded-lg p-6 transform hover:scale-105 transition-transform duration-300"
             >
               <div className="relative mb-4 flex justify-center">
                 <img
@@ -226,10 +226,10 @@ const MUNPage = () => {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {member.name}
                 </h3>
-                <p className="text-red-500 font-semibold mb-2">
+                <p className="text-red-400 font-semibold mb-2">
                   {formatRole(member)}
                 </p>
               </div>

@@ -54,7 +54,7 @@ const HomePage = () => {
     {
       title: "General Debating",
       tagline: "Mastering the art of persuasion through open discourse",
-      description: "The General Department has always stood by the students, especially the freshers’, helping them get a grip over their language skills and fluency, and improving their spontaneity and creativity. Our doors are always open to anybody who is willing to learn and grow. With events like Thursdays At DebSoc, we train willing debaters and give them a chance to try out new formats of debating each week to hone their skills.",
+      description: "The General Department has always stood by the students, especially the freshers', helping them get a grip over their language skills and fluency, and improving their spontaneity and creativity. Our doors are always open to anybody who is willing to learn and grow. With events like Thursdays At DebSoc, we train willing debaters and give them a chance to try out new formats of debating each week to hone their skills.",
       image: "/images/gd_card.png",
       link: "/"
     },
@@ -85,46 +85,48 @@ const HomePage = () => {
 
   return (
     // Add this to limit all content from overflowing horizontally
-// Place this at the top of your HomePage component return statement
-<div className="overflow-x-hidden min-h-screen relative bg-center" 
-  style={{
-    backgroundImage: "url('/images/bg.jpeg')",
-    backgroundSize: "contain",
-    backgroundPosition: "top center",
-    backgroundRepeat: "repeat",
-  }}
->
-    <div className="absolute inset-0 bg-zinc-950 opacity-90"></div>
+    <div className="overflow-x-hidden min-h-screen relative bg-center" 
+      style={{
+        backgroundImage: "url('/images/bg.jpeg')",
+        backgroundSize: "contain",
+        backgroundPosition: "top center",
+        backgroundRepeat: "repeat",
+      }}
+    >
+      {/* Different opacity for mobile (95%) and desktop (90%) */}
+      <div className="absolute inset-0 bg-zinc-950 md:opacity-90 opacity-95"></div>
+      
+      {/* Hero Section */}
+      <div className="relative h-[50vh] md:h-[60vh] flex flex-col items-center justify-center px-4">
+        <div className="mb-4 text-center">
+          <h1 className="text-6xl md:text-8xl text-white mb-2">
+            Deb<span className="text-white">Soc</span><span className="text-red-500">NSUT</span>
+          </h1>
+          {/* Added tagline */}
+          <p className="text-lg md:text-xl text-gray-300 italic mt-2">Moge Gott Diese Charge Segnen</p>
+        </div>
     
-    {/* Hero Section */}
-    <div className="relative h-[50vh] md:h-[60vh] flex flex-col items-center justify-center px-4">
-      <div className="mb-4 text-center">
-        <h1 className="text-6xl md:text-8xl text-white mb-2">
-          Deb<span className="text-white">Soc</span><span className="text-red-500">NSUT</span>
-        </h1>
+        {/* Social Icons */}
+        <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-4 md:space-x-6">
+          {[
+            { icon: FaLinkedin, href: "https://www.linkedin.com/company/debating-society-of-nsut/posts/?feedView=all" },
+            { icon: FaTwitter, href: "https://twitter.com/yourusername" },
+            { icon: FaInstagram, href: "https://www.instagram.com/debsocnsut/?hl=en" }
+          ].map(({ icon: Icon, href }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-white transition-colors duration-300"
+            >
+              <Icon size={28} className="md:size-10" />
+            </a>
+          ))}
+        </div>
       </div>
-  
-      {/* Social Icons */}
-      <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-4 md:space-x-6">
-        {[
-          { icon: FaLinkedin, href: "https://www.linkedin.com/company/debating-society-of-nsut/posts/?feedView=all" },
-          { icon: FaTwitter, href: "https://twitter.com/yourusername" },
-          { icon: FaInstagram, href: "https://www.instagram.com/debsocnsut/?hl=en" }
-        ].map(({ icon: Icon, href }) => (
-          <a
-            key={href}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-white transition-colors duration-300"
-          >
-            <Icon size={28} className="md:size-10" />
-          </a>
-        ))}
-      </div>
-    </div>
- 
-  
+   
+    
 
       {/* Departments Section */}
       <div className="relative py-16 z-10">

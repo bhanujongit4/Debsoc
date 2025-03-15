@@ -45,7 +45,7 @@ const HomePage = () => {
       link: "/mun"
     },
     {
-      title: "Literary Society",
+      title: "Literary Department",
       tagline: "Literature is the art of discovering something extraordinary about ordinary people, and saying with ordinary words something extraordinary",
       description: "Founded in 2015, As a member of the Literary Department, you are not just a participant in debates; you are a storyteller, a rhetorician, and a curator of the written and spoken word. We conduct activities and events throughout the year while also maintaining a stream of great literary content through our online channels. We are a vital part of DebSoc with some of the best events of the colloquium organized by us.",
       image: "/images/lit_card.png",
@@ -84,16 +84,17 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div 
-    className="min-h-screen relative bg-center"
-    style={{
-      backgroundImage: "url('/images/bg8.png')",
-      backgroundSize: "contain", // Ensures full image is visible
-      backgroundPosition: "top center",
-      backgroundRepeat: "repeat", // Allows repeating
-    }}
-  >
-    <div className="absolute inset-0 bg-zinc-950 opacity-75"></div>
+    // Add this to limit all content from overflowing horizontally
+// Place this at the top of your HomePage component return statement
+<div className="overflow-x-hidden min-h-screen relative bg-center" 
+  style={{
+    backgroundImage: "url('/images/bg8.png')",
+    backgroundSize: "contain",
+    backgroundPosition: "top center",
+    backgroundRepeat: "repeat",
+  }}
+>
+    <div className="absolute inset-0 bg-zinc-950 opacity-90"></div>
     
     {/* Hero Section */}
     <div className="relative h-[50vh] md:h-[60vh] flex flex-col items-center justify-center px-4">
@@ -129,7 +130,7 @@ const HomePage = () => {
       {/* Departments Section */}
       <div className="relative py-16 z-10">
         {/* Overlay that darkens the section and fades out */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/70 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/70 to-black/10"></div>
 
         {/* Content inside the Department Section */}
         <div className="relative z-10">

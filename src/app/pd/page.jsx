@@ -124,7 +124,7 @@ const PDPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-cover bg-center bg-no-repeat relative overflow-hidden">
+    <div className="min-h-screen bg-cover bg-black bg-center bg-no-repeat relative overflow-hidden">
       
       {/* Cursor light effect */}
       <div

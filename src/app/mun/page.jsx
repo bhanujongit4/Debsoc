@@ -124,7 +124,7 @@ const MUNPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-cover bg-center bg-no-repeat relative overflow-hidden">
+    <div className="min-h-screen bg-cover bg-center bg-no-repeat bg-dark relative overflow-hidden">
       
       {/* Cursor light effect */}
       <div

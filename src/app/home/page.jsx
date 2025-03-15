@@ -34,14 +34,14 @@ const HomePage = () => {
       title: "Parliamentary Debating",
       tagline: "An abode for the spirited and the bold who wish to question everything",
       description: "The Parliamentary Debating Team at NSUT is the epitome of tenacity and dedication. Having been around for more than five years, it has moulded ardent thinkers and dynamic speakers. Weekly debates, training sessions and active participation in tournaments are some key essentials of it.",
-      image: "/images/pd_card.png",
+      image: "/images/manzarg.jpg",
       link: "/pd"
     },
     {
       title: "Model United Nations",
       tagline: "Ponder, propose, parley, persuade and procure with prudence",
       description: "Being adjudged as the best delegation in over half the conferences it attends, the MUN dept. provides one with a chance to not only experience moments of victory but to organize conferences, learning to work with your peers, juniors and seniors alike, voicing your opinions, moulding and adapting ideas, analyzing, strategizing and optimizing the solutions to problems.",
-      image: "/images/mun.png",
+      image: "/images/card1.jpg",
       link: "/mun"
     },
     {

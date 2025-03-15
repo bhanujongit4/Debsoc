@@ -78,7 +78,7 @@ export default function Header() {
                 alt="Home"
                 className="w-12 h-auto mr-2"
               />
-              <span className="text-white">Home</span>
+             
             </Link>
             <button
               className="text-white"

@@ -88,7 +88,7 @@ const HomePage = () => {
 // Place this at the top of your HomePage component return statement
 <div className="overflow-x-hidden min-h-screen relative bg-center" 
   style={{
-    backgroundImage: "url('/images/bg.jpg')",
+    backgroundImage: "url('/images/bg.jpeg')",
     backgroundSize: "contain",
     backgroundPosition: "top center",
     backgroundRepeat: "repeat",

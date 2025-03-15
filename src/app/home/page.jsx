@@ -107,10 +107,9 @@ const HomePage = () => {
       {/* Social Icons */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-4 md:space-x-6">
         {[
-          { icon: FaGithub, href: "https://github.com/bhanujongit4" },
-          { icon: FaLinkedin, href: "https://www.linkedin.com/in/aarohi-bhanuj-chowdhary-43636420a" },
+          { icon: FaLinkedin, href: "https://www.linkedin.com/company/debating-society-of-nsut/posts/?feedView=all" },
           { icon: FaTwitter, href: "https://twitter.com/yourusername" },
-          { icon: FaInstagram, href: "https://www.instagram.com/bhanujchowdhary" }
+          { icon: FaInstagram, href: "https://www.instagram.com/debsocnsut/?hl=en" }
         ].map(({ icon: Icon, href }) => (
           <a
             key={href}

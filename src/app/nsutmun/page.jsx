@@ -68,7 +68,7 @@ const NSUTMUNPage = () => {
 
   // Colors from the image
   const colors = {
-    creme: "#F5EDE7",
+    creme: "#eae6e0",
     tangerine: "#F7931E",
     black: "#1c1c1c"
   };

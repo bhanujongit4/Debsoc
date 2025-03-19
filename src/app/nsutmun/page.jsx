@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Raleway, Open_Sans } from 'next/font/google'
-
+import Link from 'next/link';
 const raleway = Raleway({ 
   subsets: ['latin'],
   weight: ['500'], // Just the weight needed for h1
@@ -26,18 +26,12 @@ const NSUTMUNPage = () => {
     },
     {
       id: 2,
-      image_url: "/images/nsutmun/banner2.jpg",
+      image_url: "/images/nsutmunbg.jpg",
       title: "NSUTMUN Committees",
       description: "Participate in exciting committees including UNSC, UNHRC, UNGA, and more",
       date: "Registration closes April 30, 2024"
     },
-    {
-      id: 3,
-      image_url: "/images/nsutmun/banner3.jpg",
-      title: "Diplomatic Dinner",
-      description: "Network with delegates from across the country at our formal diplomatic dinner",
-      date: "May 16, 2024"
-    }
+    
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -182,7 +176,7 @@ const NSUTMUNPage = () => {
           className="text-4xl font-bold text-center mb-16"
           style={{ color: colors.creme }}
         >
-          NSUTMUN Highlights
+          Highlights of NSUTMUN
         </motion.h2>
 
         <div className="max-w-6xl mx-auto relative">
@@ -280,9 +274,25 @@ const NSUTMUNPage = () => {
           className="px-8 py-3 rounded-lg text-lg font-semibold transition-transform hover:scale-105"
           style={{ backgroundColor: colors.black, color: colors.creme }}
         >
-          Register Now
+            <Link target='blank' href="https://linktr.ee/NSUTMUN?fbclid=PAZXh0bgNhZW0CMTEAAab1z41rxKMzK6Hy97OD43bgPMzsdyrpdZcLF6Bre_6wwKLYpudvTWeJTIg_aem_a-kq22oUb-bdQiq1np9buw">
+      Register Now
+    </Link>
         </motion.button>
+
+
+
       </div>
+      <div className='py-3'>
+      <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
+          className="px-8 py-3 rounded-lg text-lg font-semibold transition-transform hover:scale-105"
+          style={{ backgroundColor: colors.creme, color: colors.black }}
+        >
+            <Link target='blank' href="https://www.instagram.com/nsutmodelun/">
+      Follow Us
+    </Link>
+        </motion.button> </div>
       </div>
     </div>
   );

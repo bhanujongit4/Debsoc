@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
        <body className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
         <ThemeProvider>
           <Header />
-          <main className="container mx-auto ">
+           <main className="w-full min-h-screen flex flex-col">
             {children}
           </main>
         </ThemeProvider>

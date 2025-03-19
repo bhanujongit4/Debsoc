@@ -99,9 +99,10 @@ const HomePage = () => {
       {/* Hero Section */}
       <div className="relative h-[50vh] md:h-[60vh] flex flex-col items-center justify-center px-4">
         <div className="mb-4 text-center">
-          <h1 className="text-6xl md:text-8xl text-white mb-2">
-            Deb<span className="text-white">Soc</span><span className="text-red-500">NSUT</span>
-          </h1>
+        <h1 className="font-sequel text-6xl md:text-8xl text-white mb-2">
+        Deb<span className="text-white">Soc</span><span className="text-red-500"> NSUT</span>
+        </h1>
+
           {/* Added tagline */}
           <p className="text-lg md:text-xl text-gray-300 italic mt-2">Moge Gott Diese Charge Segnen</p>
         </div>

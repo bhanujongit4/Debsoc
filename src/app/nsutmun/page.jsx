@@ -260,6 +260,20 @@ const NSUTMUNPage = () => {
           Registration is now open for delegates and International Press!
         </motion.p>
         
+       <div className="flex justify-center space-x-4 mt-6">
+        {/* Read Brochure Button - Opens PDF */}
+        <a href="/NSUTMUN_Brochure.pdf" target="_blank" rel="noopener noreferrer">
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
+            className="px-8 py-3 rounded-lg text-lg font-semibold transition-transform hover:scale-105"
+            style={{ backgroundColor: colors.creme, color: colors.black }}
+          >
+            Read Brochure
+          </motion.button>
+        </a>
+
+        {/* Register Now Button */}
         <motion.button
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
@@ -268,6 +282,7 @@ const NSUTMUNPage = () => {
         >
           Register Now
         </motion.button>
+      </div>
       </div>
     </div>
   );

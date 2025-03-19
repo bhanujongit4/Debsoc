@@ -17,7 +17,7 @@ const TestimonialSlideshow = () => {
     {
       name: "Mehak Kala",
       role: "President",
-      image: "images/mehak.jpg",
+      image: "images/Mehak.jpg",
       text: "My journey with DebSoc NSUT has been an incredible ride, one I never quite imagined. It started with me as a nervous first-year, just eager to learn the ropes of debating. I remember those initial debates, the shaky voice, the frantic research – it was all so new and exciting. But everyone was so welcoming, and I quickly found myself drawn to the energy and passion of the society.",
     },
     {
@@ -30,7 +30,7 @@ const TestimonialSlideshow = () => {
       name: "Mudit Maheshwari",
       role: "Vice President",
       image: "images/mudit.jpg",
-      text: "My journey with DebSoc NSUT has been an incredible ride, one I never quite imagined. It started with me as a nervous first-year, just eager to learn the ropes of debating. I remember those initial debates, the shaky voice, the frantic research – it was all so new and exciting. But everyone was so welcoming, and I quickly found myself drawn to the energy and passion of the society.",
+      text: "My time at DebSoc has been nothing short of transformative. From being a shy kid from a small city to becoming a confident person interacting with international delegates, it has shaped my life far more than I had ever imagined. The sleepless nights with the friends I've made here, scrambling for last-minute event permissions, are some of the chaotic, memorable moments I'll cherish forever. DebSoc has truly been a huge part of my college life, with its ups and downs, and I wouldn’t change a thing about it. A part of me will definitely stay here, always.",
     },
     {
       name: "Vishwangi",

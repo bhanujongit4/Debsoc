@@ -165,8 +165,8 @@ const NSMPDPage = () => {
               className="p-6 rounded-lg"
               style={{ backgroundColor: colors.coral }}
             >
-              <h3 className="text-xl font-bold mb-3" style={{ color: colors.darkBrown }}>4+ Debate Formats</h3>
-              <p style={{ color: colors.darkBrown }}>From British Parliamentary to Asian Parliamentary, experience diverse debate formats</p>
+              <h3 className="text-xl font-bold mb-3" style={{ color: colors.darkBrown }}>British Parliamentary Debate Formats</h3>
+              <p style={{ color: colors.darkBrown }}>CAP: Angad Singh Chawla, V Sayiram, Kaushiki Ishwar, TBA.</p>
             </motion.div>
             
             <motion.div

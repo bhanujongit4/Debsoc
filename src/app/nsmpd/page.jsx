@@ -90,7 +90,7 @@ const NSMPDPage = () => {
   <div 
     className="block md:hidden absolute inset-0 w-full h-full"
     style={{
-      backgroundImage: `url("/images/nsmbanner1.jpg")`,
+      backgroundImage: `url("/images/mobbanner.jpg")`,
       backgroundSize: 'contain',
       backgroundPosition: 'center top',
       backgroundRepeat: 'no-repeat',
@@ -98,7 +98,7 @@ const NSMPDPage = () => {
     }}
   >
     {/* Overlay for translucency */}
-    <div className="absolute inset-0 bg-black opacity-50"></div>
+    <div className="absolute inset-0 bg-amber-100 opacity-85"></div>
   </div>
 
   {/* Hero content overlay */}
@@ -116,10 +116,10 @@ const NSMPDPage = () => {
     <motion.p
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
-      className={`${opensans.className} text-lg md:text-xl mt-4`}
-      style={{ color: colors.coral }}
-    >
-      April 12-14, 2025
+      className={`${opensans.className} text-xl md:text-2xl mt-4`}
+      
+    ><div className='text-red-500'>
+      APRIL 12-14, 2025</div>
     </motion.p>
   </div>
 </div>
@@ -397,7 +397,9 @@ const NSMPDPage = () => {
             className="px-8 py-3 rounded-lg text-lg font-semibold transition-transform hover:scale-105 w-full sm:w-auto"
             style={{ backgroundColor: colors.darkBrown, color: colors.cream }}
           >
-            Register Now
+            <Link target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSf4Ciq7ZSQ7STrwEaZnpZsPF0IDza9chGKfF7e150qzg5_CvQ/viewform">
+      Register Now
+    </Link>
           </motion.button>
         </div>
       </div>

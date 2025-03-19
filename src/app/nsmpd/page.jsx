@@ -401,6 +401,16 @@ const NSMPDPage = () => {
       Register Now
     </Link>
           </motion.button>
+          <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
+          className="px-8 py-3 rounded-lg text-lg font-semibold transition-transform hover:scale-105"
+          style={{ backgroundColor: colors.cream, color: colors.black }}
+        >
+            <Link target='blank' href="https://www.instagram.com/thensmpd/">
+      Follow Us
+    </Link>
+        </motion.button>
         </div>
       </div>
     </div>

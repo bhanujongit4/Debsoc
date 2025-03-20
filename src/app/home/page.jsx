@@ -104,7 +104,7 @@ const HomePage = () => {
         </h1>
 
           {/* Added tagline */}
-          <p className="text-lg md:text-xl text-gray-300 italic mt-2">Moge Gott Diese Charge Segnen</p>
+          <p className="text-lg md:text-xl text-gray-300 italic mt-2">Möge Gott diese Charge segnen</p>
         </div>
     
         {/* Social Icons */}

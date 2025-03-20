@@ -17,7 +17,7 @@ const TestimonialSlideshow = () => {
     {
       name: "Mehak Kala",
       role: "President",
-      image: "images/Mehak.jpg",
+      image: "images/Mehak .jpg",
       text: "My journey with DebSoc NSUT has been an incredible ride, one I never quite imagined. It started with me as a nervous first-year, just eager to learn the ropes of debating. I remember those initial debates, the shaky voice, the frantic research – it was all so new and exciting. But everyone was so welcoming, and I quickly found myself drawn to the energy and passion of the society.",
     },
     {

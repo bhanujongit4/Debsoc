@@ -211,7 +211,7 @@ const HomePage = () => {
       <div className="mt-8">
         <FAQComponent />
       </div>
-      <<Footer />
+      <Footer />
     </div>
   );
 };

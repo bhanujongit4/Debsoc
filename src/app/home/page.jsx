@@ -85,6 +85,7 @@ const HomePage = () => {
   }, []);
 
   return (
+    <div>
     // Add this to limit all content from overflowing horizontally
     <div className="overflow-x-hidden min-h-screen relative bg-center" 
       style={{
@@ -211,7 +212,9 @@ const HomePage = () => {
       <div className="mt-8">
         <FAQComponent />
       </div>
-      <Footer />
+      
+    </div>
+    <Footer />
     </div>
   );
 };

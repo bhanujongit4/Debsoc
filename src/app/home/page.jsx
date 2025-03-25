@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Blog from "../components/blogslideshow";
 import { Raleway, Open_Sans } from 'next/font/google';
+import Footer from "../components/footer";
 
 // Using the same font configuration as the NSMPD page
 const raleway = Raleway({ 
@@ -210,6 +211,7 @@ const HomePage = () => {
       <div className="mt-8">
         <FAQComponent />
       </div>
+      <<Footer />
     </div>
   );
 };

@@ -87,14 +87,14 @@ const HomePage = () => {
   return (
     <div>
 
-    <div className="overflow-x-hidden min-h-screen relative bg-center" 
-      style={{
-        backgroundImage: "url('/images/bg.jpeg')",
-        backgroundSize: "contain",
-        backgroundPosition: "top center",
-        backgroundRepeat: "repeat",
-      }}
-    >
+   <div className="overflow-x-hidden min-h-screen relative bg-center" 
+  style={{
+    backgroundImage: "url('/images/bg.jpeg')",
+    backgroundSize: "cover",  // ← CHANGED
+    backgroundPosition: "top center",
+    backgroundRepeat: "no-repeat",  // ← CHANGED
+  }}
+>
       {/* Different opacity for mobile (95%) and desktop (90%)  */}
       <div className="absolute inset-0 bg-zinc-950 md:opacity-90 opacity-95"></div>
       

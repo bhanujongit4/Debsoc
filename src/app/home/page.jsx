@@ -87,12 +87,12 @@ const HomePage = () => {
   return (
     <div>
 
-   <div className="overflow-x-hidden min-h-screen relative bg-center" 
+<div className="overflow-x-hidden min-h-screen relative bg-center" 
   style={{
     backgroundImage: "url('/images/bg.jpeg')",
-    backgroundSize: "cover",  // ← CHANGED
+    backgroundSize: "auto",  // ← This maintains original size
     backgroundPosition: "top center",
-    backgroundRepeat: "no-repeat",  // ← CHANGED
+    backgroundRepeat: "repeat",
   }}
 >
       {/* Different opacity for mobile (95%) and desktop (90%)  */}

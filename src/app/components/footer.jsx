@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-6 mt-10">
-      
+      <div className="container mx-auto flex flex-col items-center gap-4">
         <h2 className="text-xl font-semibold text-red-500">DebSoc NSUT</h2>
         <p className="text-gray-400">The official debating society of NSUT</p>
         <div className="flex space-x-6">
@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} DebSoc NSUT. All rights reserved.</p>
-      
+      </div>
     </footer>
   );
 };

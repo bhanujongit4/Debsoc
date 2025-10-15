@@ -95,7 +95,7 @@ const HomePage = () => {
         backgroundRepeat: "repeat",
       }}
     >
-      {/* Different opacity for mobile (95%) and desktop (90%) */}
+      {/* Different opacity for mobile (95%) and desktop (90%)  */}
       <div className="absolute inset-0 bg-zinc-950 md:opacity-90 opacity-95"></div>
       
       {/* Hero Section */}

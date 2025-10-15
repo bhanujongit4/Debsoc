@@ -86,7 +86,7 @@ const HomePage = () => {
 
   return (
     <div>
-    // Add this to limit all content from overflowing horizontally
+
     <div className="overflow-x-hidden min-h-screen relative bg-center" 
       style={{
         backgroundImage: "url('/images/bg.jpeg')",

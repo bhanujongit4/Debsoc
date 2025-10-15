@@ -10,7 +10,6 @@ html, body {
     overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
     background-color: black;
 }
-}
 
 main {
     width: 100%;

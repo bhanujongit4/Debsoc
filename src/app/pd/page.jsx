@@ -106,13 +106,21 @@ const PDPage = () => {
     }
   };
 
-  const formatRole = (member) => {
+ const formatRole = (member) => {
     let role = member.por;
+    
+    // Map Treasurer to Executive Director for display
+    if (member.por === 'Treasurer') {
+      role = 'Executive Director';
+    }
     
     // Only add department for Director/Deputy Director
     if (member.por === 'Director' || member.por === 'Deputy Director') {
       role += member.por_department ? `  ${member.por_department}` : '';
     }
+    
+    return role;
+  };
     
     return role;
   };

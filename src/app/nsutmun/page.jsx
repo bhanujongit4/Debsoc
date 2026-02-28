@@ -485,9 +485,8 @@ const NSUTMUNPage = () => {
   const committeeSectionRef = React.useRef(null);
 
   const slideshowImages = [
-    { id: 1, image_url: "/images/mainbanner.jpg", title: "NSUT Model United Nations 2026", description: "Join us for the largest MUN conference at NSUT this year!", date: "Apr 11–12, 2026" },
-    { id: 2, image_url: "/images/nsutmunbg.jpg", title: "NSUTMUN Committees", description: "Participate in exciting committees including UNSC, UNHRC, UNGA, and more", date: "Registration Open" },
-  ];
+    { id: 1, image_url: "/images/Dates Out.png", title: "NSUT Model United Nations 2026", description: "Join us for the largest MUN conference at NSUT this year!", date: "Apr 11–12, 2026" },
+   
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -514,8 +513,8 @@ const NSUTMUNPage = () => {
 
       {/* ── Hero ── */}
       <div className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-screen">
-        <div className="hidden md:block absolute inset-0 w-full h-full" style={{ backgroundImage: `url("/images/mainbanner.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
-        <div className="block md:hidden absolute inset-0 w-full h-full" style={{ backgroundImage: `url("/images/nsutmunbg.jpg")`, backgroundSize: 'contain', backgroundPosition: 'center top', backgroundRepeat: 'no-repeat', backgroundColor: colors.black }} />
+        <div className="hidden md:block absolute inset-0 w-full h-full" style={{ backgroundImage: `url("/images/Dates Out.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="block md:hidden absolute inset-0 w-full h-full" style={{ backgroundImage: `url("/images/Dates Out.png")`, backgroundSize: 'contain', backgroundPosition: 'center top', backgroundRepeat: 'no-repeat', backgroundColor: colors.black }} />
       </div>
 
       {/* ── Committees Section ── */}

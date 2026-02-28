@@ -485,8 +485,9 @@ const NSUTMUNPage = () => {
   const committeeSectionRef = React.useRef(null);
 
   const slideshowImages = [
-    { id: 1, image_url: "/images/Dates Out.png", title: "NSUT Model United Nations 2026", description: "Join us for the largest MUN conference at NSUT this year!", date: "Apr 11–12, 2026" },
-   
+    { id: 1, image_url: "/images/mainbanner.jpg", title: "NSUT Model United Nations 2026", description: "Join us for the largest MUN conference at NSUT this year!", date: "Apr 11–12, 2026" },
+    { id: 2, image_url: "/images/nsutmunbg.jpg", title: "NSUTMUN Committees", description: "Participate in exciting committees including UNSC, UNHRC, UNGA, and more", date: "Registration Open" },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {

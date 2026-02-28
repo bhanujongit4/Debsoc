@@ -392,50 +392,7 @@ const NSUTMUNPage = () => {
         />
       </div>
 
-      {/* ── About ── */}
-      <div className={`${raleway.className} relative py-16 px-6`} style={{ backgroundColor: colors.creme }}>
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-8" style={{ color: colors.black }}
-        >
-          About NSUTMUN
-        </motion.h2>
-        <div className="max-w-4xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-            className="text-lg text-center mb-6" style={{ color: colors.black }}
-          >
-            NSUT Model United Nations is an annual diplomacy conference hosted by Netaji Subhas University of Technology,
-            bringing together students from across the nation to debate pressing global issues and develop solutions through
-            international cooperation.
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
-            className="text-lg text-center mb-10" style={{ color: colors.black }}
-          >
-            With over 300 delegates participating each year, NSUTMUN provides a platform for students to enhance their
-            diplomatic skills, critical thinking, and leadership abilities through simulated UN committee sessions.
-          </motion.p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            {[
-              { title: '6+ Committees', desc: 'From UNSC to SCRF, participate in exciting committees covering diverse global issues' },
-              { title: '300+ Delegates', desc: 'Connect with passionate delegates from top universities across India' },
-              { title: '₹50,000 in Prizes', desc: 'Compete for prestigious awards and cash prizes across all committees' },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0, transition: { delay: 0.3 + i * 0.1 } }}
-                className="p-6 rounded-lg"
-                style={{ backgroundColor: colors.tangerine }}
-              >
-                <h3 className="text-xl font-bold mb-3" style={{ color: colors.black }}>{item.title}</h3>
-                <p style={{ color: colors.black }}>{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
+      
 
       {/* ── Committees Section ── */}
       <div
@@ -524,57 +481,46 @@ const NSUTMUNPage = () => {
         </div>
       </div>
 
-      {/* ── Highlights Slideshow ── */}
-      <div className={`${raleway.className} relative py-20 px-6 bg-gradient-to-b from-black to-transparent`}>
+      {/* ── About ── */}
+      <div className={`${raleway.className} relative py-16 px-6`} style={{ backgroundColor: colors.creme }}>
         <motion.h2
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-16" style={{ color: colors.creme }}
+          className="text-4xl font-bold text-center mb-8" style={{ color: colors.black }}
         >
-          Highlights of NSUTMUN
+          About NSUTMUN
         </motion.h2>
-        <div className="max-w-6xl mx-auto relative">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentSlide}
-              initial={{ opacity: 0, x: 300 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -300 }}
-              transition={{ duration: 0.5 }}
-              className="w-full"
-            >
-              {slideshowImages[currentSlide] && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-6 flex flex-col justify-center">
-                    <h2 className="text-4xl font-bold" style={{ color: colors.creme }}>
-                      {slideshowImages[currentSlide].title}
-                    </h2>
-                    <p className="text-lg" style={{ color: colors.creme, opacity: 0.8 }}>
-                      {slideshowImages[currentSlide].description}
-                    </p>
-                    <p style={{ color: colors.tangerine }}>{slideshowImages[currentSlide].date}</p>
-                  </div>
-                  <div className="relative rounded-xl overflow-hidden">
-                    <img
-                      src={slideshowImages[currentSlide].image_url}
-                      alt={slideshowImages[currentSlide].title}
-                      className="object-cover w-full h-full rounded-xl"
-                    />
-                  </div>
-                </div>
-              )}
-            </motion.div>
-          </AnimatePresence>
-          <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {slideshowImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className="w-3 h-3 rounded-full transition-colors duration-300"
-                style={{
-                  backgroundColor: index === currentSlide ? colors.tangerine : colors.creme,
-                  opacity: index === currentSlide ? 1 : 0.4,
-                }}
-              />
+        <div className="max-w-4xl mx-auto">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+            className="text-lg text-center mb-6" style={{ color: colors.black }}
+          >
+            NSUT Model United Nations is an annual diplomacy conference hosted by Netaji Subhas University of Technology,
+            bringing together students from across the nation to debate pressing global issues and develop solutions through
+            international cooperation.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+            className="text-lg text-center mb-10" style={{ color: colors.black }}
+          >
+            With over 300 delegates participating each year, NSUTMUN provides a platform for students to enhance their
+            diplomatic skills, critical thinking, and leadership abilities through simulated UN committee sessions.
+          </motion.p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            {[
+              { title: '6+ Committees', desc: 'From UNSC to SCRF, participate in exciting committees covering diverse global issues' },
+              { title: '300+ Delegates', desc: 'Connect with passionate delegates from top universities across India' },
+              { title: '₹50,000 in Prizes', desc: 'Compete for prestigious awards and cash prizes across all committees' },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0, transition: { delay: 0.3 + i * 0.1 } }}
+                className="p-6 rounded-lg"
+                style={{ backgroundColor: colors.tangerine }}
+              >
+                <h3 className="text-xl font-bold mb-3" style={{ color: colors.black }}>{item.title}</h3>
+                <p style={{ color: colors.black }}>{item.desc}</p>
+              </motion.div>
             ))}
           </div>
         </div>

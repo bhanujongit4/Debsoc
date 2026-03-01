@@ -114,8 +114,8 @@ const IP_COMMITTEE = {
   full: 'International Press',
   color: colors.tangerine,
   accent: colors.teal,
-  banner: null,
-  agenda: null,
+  banner: 'images/ip.png',
+  agenda: 'Calling all Journalists and Photographers',
   agendaDetail: null,
   bgPdf: null,
   instagramPostImage: null, // e.g. '/images/ip-eb-post.jpg'

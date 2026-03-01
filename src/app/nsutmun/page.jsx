@@ -58,7 +58,7 @@ const COMMITTEES = [
     color: colors.orange,
     accent: colors.red,
     banner: 'images/unsc.jpeg',
-    agenda: '',
+    agenda: 'Addressing maritime security in the Bab el-Mandeb Strait: Asymmetric maritime threats and legality of pre-emptive measures for safeguarding freedom on navigation.',
     agendaDetail: "Double Delegation: Each delegation will represent one country.",
     bgPdf: null,
     portfolios: [],
@@ -71,7 +71,7 @@ const COMMITTEES = [
     color: colors.red,
     accent: colors.orange,
     banner: 'images/unhrc.jpeg',
-    agenda: null,
+    agenda: 'Upholding the rights of migrants, refugees and asylum seekers under domestic immigration enforcement mechanisms.',
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
@@ -84,20 +84,20 @@ const COMMITTEES = [
     color: colors.teal,
     accent: colors.orange,
     banner: 'images/uncsw.jpeg',
-    agenda: 'Addressing maritime security in the Bab el-Mandeb Strait: Asymmetric maritime threats and legality of pre-emptive measures for safeguarding freedom of navigation',
+    agenda: 'Strengthening access to justice for women, by promoting equitable legal systems and addressing discriminatory laws,policies and structural barriers.',
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
     instagramPostImage: null,
   },
   {
-    id: 'unga',
-    name: 'UNGA',
-    full: 'United Nations General Assembly',
+    id: 'unga specpol',
+    name: 'UNGA SPECPOL',
+    full: 'United Nations General Assembly Special Political and Decolonization Committee',
     color: colors.orange,
     accent: colors.teal,
     banner: 'images/unga.jpeg',
-    agenda: null,
+    agenda: 'Countering Neo-Imperialist maneuvers in the exploitation of critical minerals: Safeguarding the right to self-determination.',
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
@@ -110,7 +110,7 @@ const COMMITTEES = [
     color: colors.red,
     accent: colors.teal,
     banner: 'images/loksabha.jpeg',
-    agenda: null,
+    agenda: 'Addressing the budgetary viability of the VB-G RAM G Act and strengthening institutional safeguards for marginalized sections through the statutory implementation of Equal Opportunity Centres.',
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
@@ -119,7 +119,7 @@ const COMMITTEES = [
   {
     id: 'scrf',
     name: 'SCRF',
-    full: 'Special Committee on Regional Frontiers',
+    full: 'Security Council Of The Russian Federation',
     color: colors.teal,
     accent: colors.red,
     banner: 'images/scrf.jpeg',
@@ -157,13 +157,13 @@ const getStatusColor = (status) => {
 };
 
 const scrfLabels = {
-  nca: "National Cybersecurity Agency (NCA)",
-  jcmd: "Joint Command for Maritime Defense (JCMD)",
-  iscia: "Intell-Services & Counter-Interference (ISCIA)",
-  pcsl: "Public Communication & Safety Liaison (PCSL)",
-  srwe: "Strategic Resource & Waste Enforcement (SRWE)",
-  isde: "Infrastructure & Space Defense Executive (ISDE)",
-  rocm: "Regulatory Oversight & Compliance Management (ROCM)"
+  nca: "National Command Authority (NCA)",
+  jfmc: "Joint Federal Millitary Command (JFMC)",
+  iscia: "Internal Security and Counter-Insurgency Apparatus (ISCIA)",
+  pcsl: "Political Consensus and State Legitimacy (PCSL)",
+  srwe: "Strategic Resource & War Economy (SRWE)",
+  isde: "International Strategy and Diplomatic Engagement (ISDE)",
+  rocm: "Regional Operations and Caucasus Management (ROCM)"
 };
 
 /* ─── Portfolio Stats Counter ───────────────────────────────────────── */

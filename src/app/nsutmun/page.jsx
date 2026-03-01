@@ -23,6 +23,30 @@ const colors = {
   darkblue: "#002236",
 };
 
+const useVisitCounter = () => {
+  const [count, setCount] = useState(null);
+
+  useEffect(() => {
+    const increment = async () => {
+      try {
+        let current = 0;
+        try {
+          const result = await window.storage.get('visit_count', true); // shared = true so all users contribute
+          current = parseInt(result.value) || 0;
+        } catch (_) {}
+        const next = current + 1;
+        await window.storage.set('visit_count', String(next), true);
+        setCount(next);
+      } catch (err) {
+        console.error('Visit counter error:', err);
+      }
+    };
+    increment();
+  }, []);
+
+  return count;
+};
+
 /* ─────────────────────────────────────────────────────────────────────
    HARDCODED COMMITTEE DATA — edit everything here
 ───────────────────────────────────────────────────────────────────── */
@@ -656,9 +680,11 @@ const IPPanel = ({ committee }) => {
 
 /* ─── Main Page ─────────────────────────────────────────────────────── */
 const NSUTMUNPage = () => {
+    const visitCount = useVisitCounter();
   const [activeTab, setActiveTab] = useState(null);
   const [activeIP, setActiveIP] = useState(false);
   const committeeSectionRef = React.useRef(null);
+  
 
   const handleTabClick = (id) => {
     if (id === 'ip') {
@@ -810,6 +836,15 @@ const NSUTMUNPage = () => {
           </h2>
           <p style={{ color: colors.darkblue }} className="text-lg sm:text-xl mb-10">Registration is now open for delegates and International Press!</p>
 
+          {visitCount !== null && (
+  <div className="flex items-center justify-center gap-2 mb-8">
+    <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: colors.teal }} />
+    <p className="text-xs font-bold tracking-[0.3em] uppercase" style={{ color: colors.teal }}>
+      {visitCount.toLocaleString()} visit{visitCount !== 1 ? 's' : ''} since launch
+    </p>
+    <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: colors.teal }} />
+  </div>
+)}
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/NSUTMUN_Brochure.pdf" target="_blank" rel="noopener noreferrer">
               <motion.button

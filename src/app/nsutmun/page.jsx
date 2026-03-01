@@ -91,7 +91,7 @@ const COMMITTEES = [
     instagramPostImage: null,
   },
   {
-    id: 'unga specpol',
+    id: 'unga',
     name: 'UNGA SPECPOL',
     full: 'United Nations General Assembly Special Political and Decolonization Committee',
     color: colors.orange,

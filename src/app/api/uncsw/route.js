@@ -1,3 +1,4 @@
+//Ishit - UNCSW API
 import { NextResponse } from 'next/server';
 
 const SHEET_ID = '1fAqZqfhPTEWgts5dFLirfDKylp4EkJHaPPe-dm2frpY';
@@ -37,4 +38,5 @@ export async function GET() {
     console.error('UNCSW API Error:', error);
     return NextResponse.json({ error: 'Failed to fetch UNCSW data' }, { status: 500 });
   }
+
 }

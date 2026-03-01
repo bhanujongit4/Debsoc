@@ -798,14 +798,14 @@ const NSUTMUNPage = () => {
           <p className="text-gray-300 text-base sm:text-lg text-center mb-6 leading-relaxed">
             NSUT Model United Nations is an annual diplomacy conference hosted by Netaji Subhas University of Technology, bringing together students from across the nation to debate pressing global issues and develop solutions through international cooperation.
           </p>
-          <p className="text-gray-400 text-base sm:text-lg text-center mb-12 leading-relaxed">
+          <p className="text-gray-100 text-base sm:text-lg text-center mb-12 leading-relaxed">
             With over 300 delegates participating each year, NSUTMUN provides a platform for students to enhance their diplomatic skills, critical thinking, and leadership abilities through simulated UN committee sessions.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-center">
             {[
               { title: '6+ Committees', desc: 'From UNSC to SCRF, participate in exciting committees covering diverse global issues', accent: colors.creme },
               { title: '300+ Delegates', desc: 'Connect with passionate delegates from top universities across India', accent: colors.orange },
-              { title: '₹50,000 in Prizes', desc: 'Compete for prestigious awards and cash prizes across all committees', accent: colors.red },
+              { title: '₹1,00,000+ in Prizes', desc: 'Compete for prestigious awards and cash prizes across all committees', accent: colors.red },
             ].map((item, i) => (
               <motion.div
                 key={i}

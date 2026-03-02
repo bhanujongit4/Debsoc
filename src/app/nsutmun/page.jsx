@@ -54,7 +54,7 @@ const COMMITTEES = [
   {
     id: 'unsc',
     name: 'UNSC',
-    full: 'United Nations Security Council : Double Delegation',
+    full: 'UN Security Council : Double Delegation',
     color: colors.orange,
     accent: colors.red,
     banner: 'images/unsc.jpeg',
@@ -67,7 +67,7 @@ const COMMITTEES = [
   {
     id: 'unhrc',
     name: 'UNHRC',
-    full: 'UN Human Rights Council',
+    full: 'UN Human Rights Council : Double Delegation',
     color: colors.red,
     accent: colors.orange,
     banner: 'images/unhrc.jpeg',
@@ -723,7 +723,7 @@ const NSUTMUNPage = () => {
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">Committees</h2>
             <div className="h-px flex-1" style={{ background: `linear-gradient(to right, ${colors.orange}66, transparent)` }} />
-            <span className="text-xs sm:text-sm font-bold tracking-widest uppercase" style={{ color: colors.orange }}>6 Councils</span>
+            <span className="text-xs sm:text-sm font-bold tracking-widest uppercase" style={{ color: colors.orange }}>7 Councils</span>
           </div>
           <p className="text-gray-400 text-sm ml-5 mt-1">Select a committee to explore its agenda, portfolios, and executive board.</p>
         </div>

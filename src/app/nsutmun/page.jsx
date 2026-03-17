@@ -75,7 +75,7 @@ const COMMITTEES = [
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
-    instagramPostImage: null,
+    instagramPostImage: 'images/eb/unhrc-eb.png',
   },
   {
     id: 'uncsw',
@@ -88,7 +88,7 @@ const COMMITTEES = [
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
-    instagramPostImage: null,
+    instagramPostImage: 'images/eb/uncsw-eb.png',
   },
   {
     id: 'unga',
@@ -101,7 +101,7 @@ const COMMITTEES = [
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
-    instagramPostImage: null,
+    instagramPostImage: 'images/eb/unga-eb.png',
   },
   {
     id: 'lok-sabha',
@@ -114,7 +114,7 @@ const COMMITTEES = [
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
-    instagramPostImage: null,
+    instagramPostImage: 'images/eb/loksabha-eb.png',
   },
   {
     id: 'scrf',
@@ -127,7 +127,7 @@ const COMMITTEES = [
     agendaDetail: null,
     bgPdf: null,
     portfolios: [],
-    instagramPostImage: null,
+    instagramPostImage: 'images/eb/scrf-eb.png',
   },
 ];
 
@@ -142,7 +142,7 @@ const IP_COMMITTEE = {
   agenda: 'Calling all Journalists and Photographers',
   agendaDetail: null,
   bgPdf: null,
-  instagramPostImage: null, // e.g. '/images/ip-eb-post.jpg'
+  instagramPostImage: 'images/eb/ip-eb.png', // e.g. '/images/ip-eb-post.jpg'
 };
 
 /* ─── Shared Utilities ──────────────────────────────────────────────── */
@@ -669,11 +669,17 @@ const IPPanel = ({ committee }) => {
 
       {/* EB Post */}
       <InstagramPostBlock
-        image={instagramPostImage}
-        color={color}
-        accent={accent}
-        label="Executive Board"
-      />
+  image={instagramPostImage}
+  color={color}
+  accent={accent}
+  label="Executive Board"
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+    aspectRatio: '1080 / 1440', 
+    objectFit: 'contain' 
+  }}
+/>
     </motion.div>
   );
 };

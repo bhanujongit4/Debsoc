@@ -62,7 +62,7 @@ const COMMITTEES = [
     agendaDetail: "Double Delegation: Each delegation will represent one country.",
     bgPdf: null,
     portfolios: [],
-    instagramPostImage: null, // e.g. '/images/unsc-eb-post.jpg'
+    instagramPostImage: 'images/eb/unsc-eb.png', // e.g. '/images/unsc-eb-post.jpg'
   },
   {
     id: 'unhrc',

@@ -200,7 +200,7 @@ const InstagramPostBlock = ({ image, color, accent, label = "Executive Board" })
     </div>
     <div className="max-w-sm mx-auto">
       {image ? (
-        <div className="relative" style={{ aspectRatio: '1/1' }}>
+        <div className="relative" style={{ aspectRatio: '3/4' }}>
           <img
             src={image}
             alt={label}
